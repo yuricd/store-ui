@@ -1,0 +1,291 @@
+@import '_base.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: #03FCA5;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $base-size;
+  color: $text-color; 
+}
+
+p, a, button {
+  color: $text-color; 
+}
+
+a {
+  color: $text-color;
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+
+h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 1em;
+}
+
+input, textarea, select, button {
+  font-family: $font-family;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.container {
+  margin-top: 3em;
+  min-height: 80vh;
+}
+
+.content {
+  position: relative;
+  margin-top: -$menu-height;
+}
+
+.logo {
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-content {
+  
+  a {
+    color: $primary-green;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.page-content__main {
+  margin-bottom: 2em;
+}
+
+h1.page-content__title {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.centerize {
+  text-align: center;
+}
+
+// BUTTON
+button {
+  cursor: pointer;
+}
+
+.btn-container {
+  display: flex;
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.right {
+    justify-content: flex-end;
+  }
+}
+
+.btn {
+  padding: 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  transition: all ease .2s;
+  cursor: pointer;
+}
+
+.no-bg {
+  background: none;
+  border: 1px solid #FFF;
+
+  &:hover {
+    background: rgba(255, 255, 255, .1);
+  }
+}
+
+.rounded {
+  border-radius: 100px;
+}
+
+.white {
+  color: #FFF;
+  border-color: #FFF;
+}
+
+.grey {
+  color: #FFF;
+  background: #999;
+}
+
+.green {
+  background: $primary-green;
+  color: #FFF;
+}
+
+.red {
+  background: $red;
+  color: #FFF;
+}
+
+// PRODUCTS
+.list-products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &.centerize {
+    justify-content: center;
+
+    .product-card {
+      margin: 2em;
+    }
+  }
+}
+
+
+.tags {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 15px;
+
+
+  span {
+    background: $light-grey;
+    text-transform: uppercase;
+    font-size: 10px;
+    padding: 4px 17px;
+    border-radius: 30px;
+    margin: 0 2px;
+    margin-bottom: 8px;
+    opacity: .4;
+    transition: all ease .2s;
+    cursor: default;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+// FORM
+.formDefault {
+  margin-bottom: 30px;
+
+  input, textarea, select {
+    background: #F5F5F5;
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .row {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .segment {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+
+  .label-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin: 12px 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+  }
+  
+  .label-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    border: 1px solid #DDD;
+  }
+  
+  .label-container input:checked ~ .checkmark {
+    background-color: $primary-green;
+    border: 1px solid $primary-green;
+
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .label-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .label-container .checkmark:after {
+    left: 8px;
+    top: 3px;
+    width: 3px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+.bottom {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1em;
+}

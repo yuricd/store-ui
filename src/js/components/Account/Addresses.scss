@@ -1,0 +1,32 @@
+@import '../../../styles/base.scss';
+
+.addresses__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.addresses__box__form {
+  min-width: 50%;
+}
+
+.addresses__box__list {
+  margin-left: 2em;
+  padding: 20px;
+}
+
+.addresses__box__list__item {
+  background: #F7F7F7;
+  padding: 20px;
+  margin-bottom: 1em;
+
+  span {
+    display: block;
+    margin-bottom: 1em;
+    &.title {
+      margin: 0;
+      display: block;
+      font-weight: 600;
+    }
+  }
+}

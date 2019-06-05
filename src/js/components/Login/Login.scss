@@ -1,0 +1,15 @@
+@import '../../../styles/base.scss';
+
+.login {
+  display: flex;
+}
+
+.login__signin, .login__signup {
+  flex: 1;
+  padding: 0 60px;
+  width: 45%;
+}
+
+.login__signin {
+  border-right: 1px solid #EEE;
+}

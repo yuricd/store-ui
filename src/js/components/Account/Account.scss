@@ -1,0 +1,51 @@
+@import '../../../styles/base.scss';
+
+.page-content__account {
+  display: flex;
+  margin: 2em 0;
+  flex-direction: column;
+}
+
+.page-content__account__menu {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2em;
+
+  ul {
+    list-style: none;
+
+    li {
+      display: inline-block;
+      width: 180px;
+
+      i {
+        margin-right: 1em;
+      }
+
+      a {
+        display: block;
+        color: #333;
+        padding: 10px;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        &.active {
+          font-weight: 600;
+          background: #F5F5F5;
+        }
+      }
+    }
+  }
+}
+
+.page-content__box {
+  h2 {
+    margin-bottom: 2em;
+  }
+
+  h4 {
+    margin-bottom: 1em;
+  }
+}

@@ -1,0 +1,63 @@
+@import '../../../styles/base.scss';
+
+.cart {
+  display: flex;
+}
+
+.cart__products {
+  flex: 6;
+}
+
+.cart__overview {
+  margin-left: 20px;
+
+}
+
+.cart__overview__box {
+  margin-bottom: 20px;
+  flex: 1;
+  padding: 20px;
+  background: #F9F9F9;
+
+  h3 {
+    text-transform: uppercase;
+  }
+
+  .shipment-data {
+    display: flex;
+
+    select, input {
+      background: #FFF;
+      border: 1px solid #DDD;
+      padding: 10px;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .shipment-info {
+    .price {
+      color: $primary-green;
+    }
+
+    display: block;
+    margin: 10px 0;
+  }
+
+  .cart__overview__total { 
+    margin-top: 2em;
+
+    tr td {
+      &:first-child {
+        padding-right: 30px;
+      }
+    }
+  }
+}
+
+button.btn, a.btn {
+  padding: 15px 20px;
+}
